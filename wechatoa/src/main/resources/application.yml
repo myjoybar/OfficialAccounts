@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+    # active: produce
+  jpa:
+    hibernate:
+      ddl-auto: update #create update validate
+      show-sql: true
+  mybatis:
+    mapper-locations: classpath:mapping/*.xml
+    type-aliases-package: com.joy.entity
+
+
